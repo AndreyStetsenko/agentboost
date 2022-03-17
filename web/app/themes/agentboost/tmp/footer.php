@@ -2,21 +2,31 @@
 <footer class="footer">
 	<div class="footer__top">
 		<div class="container-xxl footer__container">
+		<?php if ( have_rows( 'footer_head', 'option' ) ) : ?>
+			<?php while ( have_rows( 'footer_head', 'option' ) ) : the_row(); ?>
 			<div class="footer-start">
-				<div class="footer-start__img sm-hiddem">
-					<img src="<?php echo get_template_directory_uri() . "/assets/img/undraw_to_the_stars_qhyy.svg" ?>" alt="">
-				</div>
+				<?php if ( get_sub_field( 'image' ) ) : ?>
+					<div class="footer-start__img sm-hiddem">
+						<img src="<?= the_sub_field( 'image' ) ?>" />
+					</div>
+				<?php endif ?>
 				<div class="footer-start__content">
 					<h2 class="footer-start__title">
-						Ready to start now?
+						<?= the_sub_field( 'title' ) ?>
 					</h2>
-					<h3 class="footer-start__subtitle">Dial to 855-378-1451 and learn more today!</h3>
-					<p class="footer-start__text">Powered by Agent Boost Marketing, the guide aims to inform and educate insurance agents in today’s ever-changing marketplace.</p>
-					<button type="button" class="btn btn--md btn--shadow">
-						<span>Start Now</span>
-					</button>
+					<h3 class="footer-start__subtitle"><?= the_sub_field( 'subtitle' ) ?></h3>
+					<p class="footer-start__text"><?= the_sub_field( 'caption' ) ?></p>
+					<?php if ( have_rows( 'button' ) ) : ?>
+						<?php while ( have_rows( 'button' ) ) : the_row(); ?>
+						<a href="<?= the_sub_field( 'link' ) ?>" type="button" class="btn btn--md btn--shadow">
+							<span><?= the_sub_field( 'title' ) ?></span>
+						</a>
+						<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
 			</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
 			<div class="row">
 				<div class="col-lg-3 footer-item">
 					<nav class="footer-nav height-full">
