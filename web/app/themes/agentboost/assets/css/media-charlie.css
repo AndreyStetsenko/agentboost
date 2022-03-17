@@ -1,0 +1,102 @@
+@media (max-width: 1199.98px) {
+    .instraction-stage{
+        display: flex;
+        flex-direction: column;
+    }
+    .instraction-step {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
+@media (min-width: 320px) {
+    /*
+    .instraction-stage{
+        display: flex;
+        flex-direction: column;
+    }
+    .instraction-step {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    .contracting-btns-wrapper{
+        flex-direction: column;
+    }
+    .contracting-select-wrapper{
+        columns: 1;
+    }
+
+    .contracting-title-select{
+        margin-bottom: 20px;
+    }
+    .contracting-select{
+        margin-bottom: 20px;
+    }
+    .btn-save{
+        width: 100%;
+    }
+    
+    .btn-next{
+        width: 100%;
+    }*/
+}
+
+@media (min-width: 360px) {
+
+}
+@media (min-width: 482px) {
+  
+}
+
+@media (min-width: 512px) {
+
+}
+
+@media (min-width: 576px) {
+    .instraction-step {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }   
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    .contracting-select-wrapper{
+        columns: 3;
+    }
+    .contracting-title-select{
+        margin-bottom: 0;
+    }
+    .contracting-select{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .instraction-stage{
+        display: flex;
+        flex-direction: inherit;
+    }
+    .instraction-step {
+        padding: 0 6px;
+        margin-bottom: 20px;
+    }
+}

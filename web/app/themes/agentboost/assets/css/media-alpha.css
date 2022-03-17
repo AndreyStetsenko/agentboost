@@ -1,0 +1,82 @@
+@media (max-width: 1199.98px) {
+    .pl-40,.pr-40{
+        padding: 0 30px;
+    }
+    .h-auto-1200{
+        height: auto;
+    }
+    .tools{
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .flex-columns .flex-col-6{
+        flex: 0 0 100%;
+    }
+    .custom-li{
+        border: 1px solid var(--border);
+        padding: 10px;
+        border-radius: var(--radius);
+    }
+    .big-list-block{
+        flex-direction: column;
+    }
+    .big-list-block .big-list-block-name{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .big-list{
+        justify-content: center;
+        width: 100%;
+    }
+    .big-list .column-4{
+        margin: 0 10px;
+    }
+    .section-100{
+        padding: 50px 0;
+    }
+    .section-90{
+        padding: 50px 0;
+    }
+    .text-md-right{text-align:right;}
+    .item-section .title-section{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h3.title-section{font-size:30px;line-height:40px;}
+    .pb-60{padding-bottom:40px;}
+    .mb-60{margin-bottom:40px;}
+    .item-section{
+        padding: 40px 0;
+    }
+    .card .p-30{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .list-long .list-long-item{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
