@@ -31,75 +31,80 @@
 				<div class="col-lg-3 footer-item">
 					<nav class="footer-nav height-full">
 						<div class="footer-nav__item height-full">
+						<?php if ( get_field( 'footer_logo', 'option' ) ) : ?>
 							<a href="index.php" class="logo">
-								<img src="<?php echo get_template_directory_uri() . "/assets/img/logo-dark.png" ?>" alt="">
+								<img src="<?= the_field( 'footer_logo', 'option' ) ?>">
 							</a>
+						<?php endif ?>
+
+						<?php if ( have_rows( 'footer_partners', 'option' ) ) : ?>
 							<div class="footer-partners">
 								<div class="footer-partners__wrapper">
-									<div class="footer-partners__item" style="max-width: 70px;"><img src="<?php echo get_template_directory_uri() . "/assets/img/nahu-logo.png" ?>" alt=""></div>
-									<div class="footer-partners__item"><img src="<?php echo get_template_directory_uri() . "/assets/img/BBB-Accredited.png" ?>" alt=""></div>
+								<?php while ( have_rows( 'footer_partners', 'option' ) ) : the_row(); ?>
+									<div class="footer-partners__item" style="<?= the_sub_field( 'custom_styles' ) ?>">
+										<?php if ( get_sub_field( 'img' ) ) : ?>
+											<img src="<?php the_sub_field( 'img' ); ?>" />
+										<?php endif ?>
+									</div>
+								<?php endwhile; ?>
 								</div>
 							</div>
+						<?php endif; ?>
 						</div>
 					</nav>
 				</div>
+
+				<?php if ( have_rows( 'footer_contacts', 'option' ) ) : ?>
 				<div class="col-lg-5 footer-item">
 					<nav class="footer-nav">
 						<div class="row">
+						<?php while ( have_rows( 'footer_contacts', 'option' ) ) : the_row(); ?>
 							<div class="col-sm-6 mb-4 mb-sm-0">
 								<div class="footer-nav__item">
+								<?php if ( have_rows( 'items' ) ) : ?>
+									<?php while ( have_rows( 'items' ) ) : the_row(); ?>
 									<h3 class="footer-title">
-										dial to
+										<?= the_sub_field( 'title' ) ?>
 									</h3>
 									<ul class="footer-nav__list">
-										<li class="footer-nav__item">
-											<a href="tel:+8553781451">855-378-1451</a>
-										</li>
+										<?php if ( have_rows( 'item' ) ) : ?>
+											<?php while ( have_rows( 'item' ) ) : the_row(); ?>
+											<li class="footer-nav__item">
+												<?php if ( get_sub_field( 'check_link' ) == 1 ) : ?>
+													<a href="<?= the_sub_field( 'link' ) ?>"><?= the_sub_field( 'content' ) ?></a>
+												<?php else : ?>
+													<p><?= the_sub_field( 'content' ) ?></p>
+												<?php endif; ?>
+											</li>
+											<?php endwhile; ?>
+										<?php endif; ?>
 									</ul>
-									<h3 class="footer-title">
-										email
-									</h3>
-									<ul class="footer-nav__list">
-										<li class="footer-nav__item">
-											<a href="mailto:info@agent-boost.com">info@agent-boost.com</a>
-										</li>
-									</ul>
+									<?php endwhile; ?>
+								<?php endif; ?>
 								</div>
 							</div>
-							<div class="col-sm-5">
-								<div class="footer-nav__item">									
-									<h3 class="footer-title">
-										Location
-									</h3>
-									<ul class="footer-nav__list">
-										<li class="footer-nav__item">
-											<p>10421 S Jordan Gateway, South Jordan, UT 84095</p>
-										</li>
-									</ul>
-								</div>
-							</div>
+						<?php endwhile; ?>
 						</div>
 					</nav>
 				</div>
+				<?php endif; ?>
+
 				<div class="col-lg-4 footer-item">
 					<nav class="footer-nav height-full p-0">
 						<div class="footer-nav__item height-full">
 							<div class="footer-social-wrpr">
 								<h3 class="footer-social-title">Follow Us:</h3>
+								<?php if ( have_rows( 'footer_socials', 'option' ) ) : ?>
 								<div class="footer-social flex-grow-1">
-									<a href="#" class="footer-social__item">
-										<img src="<?php echo get_template_directory_uri() . "/assets/img/twitter.svg" ?>" alt="">
+									<?php while ( have_rows( 'footer_socials', 'option' ) ) : the_row(); ?>
+									<a href="<?= the_sub_field( 'link' ) ?>" class="footer-social__item">
+									<?php if ( get_sub_field( 'icon' ) ) : ?>
+										<img src="<?php the_sub_field( 'icon' ); ?>" />
+									<?php endif ?>
 									</a>
-									<a href="#" class="footer-social__item">
-										<img src="<?php echo get_template_directory_uri() . "/assets/img/instagram.svg" ?>" alt="">
-									</a>
-									<a href="#" class="footer-social__item">
-										<img src="<?php echo get_template_directory_uri() . "/assets/img/linkedin.svg" ?>" alt="">
-									</a>
-									<a href="#" class="footer-social__item">
-										<img src="<?php echo get_template_directory_uri() . "/assets/img/facebook.svg" ?>" alt="">
-									</a>
+									<?php endwhile; ?>
 								</div>
+								<?php endif; ?>
 							</div>
 						</div>
 					</nav>
@@ -118,7 +123,7 @@
 				</div>
 				<ul class="footer__bottom-list">
 					<li>
-						<a href="#">Privacy Policy</a>
+						<a href="<?= get_privacy_policy_url() ?>">Privacy Policy</a>
 					</li>
 				</ul>
 			</div>
