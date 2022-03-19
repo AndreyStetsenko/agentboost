@@ -1,7 +1,7 @@
 <header class="header" data-scroll>
 	<div class="container-xxl header__container">
 		<div class="header__body">
-			<a href="index.php" class="header__logo">
+			<a href="/" class="header__logo">
 				<img src="<?php echo get_template_directory_uri() . "/assets/img/logo-dark.png" ?>" alt="logo">
 			</a>			
 			<div class="header__actions">
