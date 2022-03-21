@@ -64,7 +64,7 @@
 			<?php if ( have_rows( 'header_nav', 'option' ) ) : ?>
 				<?php while ( have_rows( 'header_nav', 'option' ) ) : the_row(); ?>
 
-				<li class="nav-menu__list-item has-sub">
+				<li class="nav-menu__list-item <?= have_rows( 'subnav' ) ? 'has-sub' : '' ?>">
 					<a href="<?= the_sub_field( 'link' ) ?>" class="nav-menu__list-link">
 						<?= the_sub_field( 'title' ) ?>
 
