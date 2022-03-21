@@ -110,6 +110,6 @@
 		width: 757px;		
 	">
 				
-		<img src="<?php echo get_template_directory_uri() . "/assets/img/shape.svg" ?>" alt="">	
+		<img style="opacity: .4" src="<?php echo get_template_directory_uri() . "/assets/img/shape.svg" ?>" alt="">	
 	</div>
 </nav>
