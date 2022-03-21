@@ -17,7 +17,7 @@ get_header();
 
 			<?php if ( have_posts() ) : ?>
 
-				<section class="offer left-vector" style="background-image: url(http://agentboost.test/app/uploads/2022/03/unsplash_T8cMZD95YxA.jpg);">
+				<section class="offer left-vector" style="background-image: url(<?= get_bloginfo('template_directory') . "/assets/img/unsplash_Hb6uWq0i4MI.jpg" ?>);">
 					<div class="container offer__container">
 						<div class="offer__body max-w-100">
 											<h2 class="title-section --white">Search Results for</h2>
