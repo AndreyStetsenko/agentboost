@@ -94,7 +94,7 @@ get_header();
         </div>
       </div>
     </section>
-    <section class="instraction-line" style="margin-bottom: 40px;">
+    <section class="instraction-line" style="margin-bottom: 40px;" id="formStages">
       <div class="container">
         <ul class="instraction-stage instraction-stage__content">
           <li class="instraction-step">
@@ -121,17 +121,27 @@ get_header();
     <section class="contracting-btns-wrapper-bg">
       <div class="container">
         <div class="contracting-btns-wrapper">
-          <div class="contracting-item">
+          <div class="contracting-item" id="btnPrevious" style="display: none">
+						<button type="button" class="btn btn--md btn--shadow">
+							<span class="btn__icon ico-rotate--180">
+								<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.3335 8.33301L4.66683 4.99967L1.3335 1.66634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+							</span>
+							<span>Previous</span>
+						</button>
+					</div>
+          <div class="contracting-item" id="btnContinueLater1">
             <button type="button" class="btn btn--md btn--shadow">
-            <span>Save and Continue Later</span>
+              <span>Save and Continue Later</span>
             </button>
           </div>
           <div class="contracting-item">
+            <button type="button" class="btn btn--md btn--shadow" id="btnContinueLater2" style="display: none">
+              <span>Save and Continue Later</span>
+            </button>
             <button type="button" class="btn btn--md btn--primary" id="formBtnSteps" data-step="1">
               <span>Next</span>
-              <span class="btn__icon">
-                <img src="<?= get_bloginfo('template_directory') . '/assets/img/arrow-currcolor.svg' ?>">
-              </span>
             </button>
           </div>
         </div>
