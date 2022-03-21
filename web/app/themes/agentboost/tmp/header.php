@@ -1,4 +1,4 @@
-<header class="header" data-scroll>
+<header class="header <?= !is_front_page() ? 'header--white' : '' ?>" <?= is_front_page() ? 'data-scroll' : '' ?>>
 	<div class="container-xxl header__container">
 		<div class="header__body">
 			<a href="/" class="header__logo">
