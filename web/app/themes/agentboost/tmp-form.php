@@ -113,48 +113,77 @@ get_header();
       </div>
     </section>
     
-    <?php require get_template_directory() . '/tmp/form-step-1.php'; ?>
-    <?php require get_template_directory() . '/tmp/form-step-2.php'; ?>
-    <?php require get_template_directory() . '/tmp/form-step-3.php'; ?>
-    <?php require get_template_directory() . '/tmp/form-step-4.php'; ?>
+    <form id="bigForm">
+      <?php require get_template_directory() . '/tmp/form-step-1.php'; ?>
+      <?php require get_template_directory() . '/tmp/form-step-2.php'; ?>
+      <?php require get_template_directory() . '/tmp/form-step-3.php'; ?>
+      <?php require get_template_directory() . '/tmp/form-step-4.php'; ?>
 
-    <section class="contracting-btns-wrapper-bg">
-      <div class="container">
-        <div class="contracting-btns-wrapper">
-          <div class="contracting-item" id="btnPrevious" style="display: none">
-						<button type="button" class="btn btn--md btn--shadow">
-							<span class="btn__icon ico-rotate--180">
-								<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.3335 8.33301L4.66683 4.99967L1.3335 1.66634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-							</span>
-							<span>Previous</span>
-						</button>
-					</div>
-          <div class="contracting-item" id="btnContinueLater1">
-            <button type="button" class="btn btn--md btn--shadow">
-              <span>Save and Continue Later</span>
-            </button>
-          </div>
-          <div class="contracting-item">
-            <button type="button" class="btn btn--md btn--shadow" id="btnContinueLater2" style="display: none">
-              <span>Save and Continue Later</span>
-            </button>
-            <button type="button" class="btn btn--md btn--primary" id="formBtnSteps" data-step="1">
-              <span>Next</span>
-            </button>
-            <button type="button" class="btn btn--md btn--primary" id="formBtnSubmit" style="display: none">
-              <span>Submit</span>
-            </button>
+      <section class="contracting-btns-wrapper-bg">
+        <div class="container">
+          <div class="contracting-btns-wrapper">
+            <div class="contracting-item" id="btnPrevious" style="display: none">
+              <button type="button" class="btn btn--md btn--shadow">
+                <span class="btn__icon ico-rotate--180">
+                  <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.3335 8.33301L4.66683 4.99967L1.3335 1.66634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <span>Previous</span>
+              </button>
+            </div>
+            <div class="contracting-item" id="btnContinueLater1">
+              <button type="button" class="btn btn--md btn--shadow">
+                <span>Save and Continue Later</span>
+              </button>
+            </div>
+            <div class="contracting-item">
+              <button type="button" class="btn btn--md btn--shadow" id="btnContinueLater2" style="display: none">
+                <span>Save and Continue Later</span>
+              </button>
+              <button type="button" class="btn btn--md btn--primary" id="formBtnSteps" data-step="1">
+                <span>Next</span>
+              </button>
+              <button type="submit" class="btn btn--md btn--primary" id="formBtnSubmit" style="display: none">
+                <span>Submit</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </form>
 
 	</main>
 	<?php require get_template_directory() . '/tmp/footer.php'; ?>
 </div>
 	
 <?php require get_template_directory() . '/tmp/footer-popup.php'; ?>
+
 <?php
 get_footer();
+?>
+
+<script>
+  const form = $('#bigForm');
+
+  form.submit( function() {
+    var str = $(this).serialize();
+
+    $.ajax({
+      type: 'post',
+      url: '<?php bloginfo('template_url'); ?>/inc/mail.php',
+      data: str,
+      success: function(msg) {
+        if(msg == 'OK') {
+          result = '<div class="ok">Сообщение отправлено</div>'; // текст, если сообщение отправлено
+          $("#fields").show();
+        } else {
+          result = msg;
+        }
+        
+        console.log(result);
+      }
+    });
+    return false;
+  });
+</script>
