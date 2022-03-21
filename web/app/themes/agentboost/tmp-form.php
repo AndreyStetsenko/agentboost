@@ -160,6 +160,7 @@ get_header();
 <?php require get_template_directory() . '/tmp/footer-popup.php'; ?>
 
 <?php
+
 get_footer();
 ?>
 

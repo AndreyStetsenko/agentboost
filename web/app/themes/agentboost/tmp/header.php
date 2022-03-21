@@ -7,9 +7,23 @@
 			<div class="header__actions">
 				<a href="#" class="btn btn--sm header-btn"><img src="<?php echo get_template_directory_uri() . "/assets/img/ico-search.svg"  ?>" alt=""></a>
 				<a href="/" class="btn btn--sm header-btn sm-hiddem"><img src="<?php echo get_template_directory_uri() . "/assets/img/house-icon.svg"  ?>" alt=""></a>
-				<a href="#" class="btn btn--sm header-btn sm-hiddem"><span>Get Contacted</span></a>
-				<a href="#" class="btn btn--sm header-btn login sm-hiddem"><span>Login</span></a>
-				<a href="#" class="btn btn--md mw-100 btn--primary sing-up sm-hiddem">Sign Up</a>
+				<?php if ( have_rows( 'header_link_contacted', 'option' ) ) : ?>
+					<?php while ( have_rows( 'header_link_contacted', 'option' ) ) : the_row(); ?>
+						<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--sm header-btn sm-hiddem"><span><?= the_sub_field( 'title' ) ?></span></a>
+					<?php endwhile; ?>
+				<?php endif; ?>
+				
+				<?php if ( have_rows( 'header_link_login', 'option' ) ) : ?>
+					<?php while ( have_rows( 'header_link_login', 'option' ) ) : the_row(); ?>
+						<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--sm header-btn login sm-hiddem"><span><?= the_sub_field( 'title' ) ?></span></a>
+					<?php endwhile; ?>
+				<?php endif; ?>
+
+				<?php if ( have_rows( 'header_link_signup', 'option' ) ) : ?>
+					<?php while ( have_rows( 'header_link_signup', 'option' ) ) : the_row(); ?>
+						<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--md mw-100 btn--primary sing-up sm-hiddem"><?= the_sub_field( 'title' ) ?></a>
+					<?php endwhile; ?>
+				<?php endif; ?>
 				<button type="button" class="btn btn--round btn--shadow header__burger">
 					<img src="<?php echo get_template_directory_uri() . '/assets/img/menu-burger.svg' ?>" alt="">
 				</button>
@@ -23,82 +37,69 @@
 		<div class="nav-menu__head">
 			<a href="#" class="btn btn--sm header-btn"><img src="<?php echo get_template_directory_uri() . "/assets/img/ico-search.svg"  ?>" alt=""></a>
 			<a href="#" class="btn btn--sm header-btn xs-hidden"><img src="<?php echo get_template_directory_uri() . "/assets/img/house-icon.svg" ?>" alt=""></a>
-			<a href="#" class="btn btn--sm header-btn xs-hidden"><span>Contact</span></a>
-			<a href="#" class="btn btn--sm header-btn login"><span>Login</span></a>
-			<a href="#" class="btn btn--md mw-100 btn--primary sing-up">Sign Up</a>
+			<?php if ( have_rows( 'header_link_contacted', 'option' ) ) : ?>
+				<?php while ( have_rows( 'header_link_contacted', 'option' ) ) : the_row(); ?>
+					<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--sm header-btn xs-hidden"><span><?= the_sub_field( 'title' ) ?></span></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			
+			<?php if ( have_rows( 'header_link_login', 'option' ) ) : ?>
+				<?php while ( have_rows( 'header_link_login', 'option' ) ) : the_row(); ?>
+					<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--sm header-btn login"><span><?= the_sub_field( 'title' ) ?></span></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
+
+			<?php if ( have_rows( 'header_link_signup', 'option' ) ) : ?>
+				<?php while ( have_rows( 'header_link_signup', 'option' ) ) : the_row(); ?>
+					<a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--md mw-100 btn--primary sing-up"><?= the_sub_field( 'title' ) ?></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
 			<button type="button" class="btn btn--round btn--shadow header__burger">
 				<img src="<?php echo get_template_directory_uri() . '/assets/img/ico-close.svg' ?>" alt="">
 			</button>
 		</div>
 		<div class="nav-menu__content">
 			<ul class="nav-menu__list">
-				<li class="nav-menu__list-item has-sub active">
-					<a href="#" class="nav-menu__list-link">
-						Agent Support
-						<span class="menu-icon">
-							<img src="<?php echo get_template_directory_uri() . "/assets/img/ico-arrow-right.svg" ?>" alt="">
-						</span>
-					</a>
-					<ul class="nav-menu__list-sub">
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">Request Marketing List</a>
-						</li>
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">How to be Ready to Sell</a>
-						</li>
-					</ul>
-				</li>
+
+			<?php if ( have_rows( 'header_nav', 'option' ) ) : ?>
+				<?php while ( have_rows( 'header_nav', 'option' ) ) : the_row(); ?>
+
 				<li class="nav-menu__list-item has-sub">
-					<a href="#" class="nav-menu__list-link">
-						Agent Tools
-						<span class="menu-icon">
-							<img src="<?php echo get_template_directory_uri() . "/assets/img/ico-arrow-right.svg" ?>" alt="">
-						</span>
+					<a href="<?= the_sub_field( 'link' ) ?>" class="nav-menu__list-link">
+						<?= the_sub_field( 'title' ) ?>
+
+						<?php if ( have_rows( 'subnav' ) ) : ?>
+							<span class="menu-icon">
+								<img src="<?php echo get_template_directory_uri() . "/assets/img/ico-arrow-right.svg" ?>" alt="">
+							</span>
+						<?php endif; ?>
 					</a>
-					<ul class="nav-menu__list-sub">
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">Agent Tools</a>
-						</li>
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">Leads</a>
-						</li>
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">Agent Incentives</a>
-						</li>
-						<li class="nav-menu__list-item">
-							<a href="#" class="nav-menu__list-link">Contracting</a>
-						</li>
-					</ul>
+					<?php if ( have_rows( 'subnav' ) ) : ?>
+						<ul class="nav-menu__list-sub">
+						<?php while ( have_rows( 'subnav' ) ) : the_row(); ?>
+							<li class="nav-menu__list-item">
+								<a href="<?= the_sub_field( 'link' ) ?>" class="nav-menu__list-link"><?= the_sub_field( 'title' ) ?></a>
+							</li>
+						<?php endwhile; ?>
+						</ul>
+					<?php endif; ?>					
 				</li>
-				<li class="nav-menu__list-item">
-					<a href="#" class="nav-menu__list-link">
-						Compliance
-					</a>
-				</li>
-				<li class="nav-menu__list-item">
-					<a href="#" class="nav-menu__list-link">
-						Blog
-					</a>
-				</li>
-				<li class="nav-menu__list-item">
-					<a href="#" class="nav-menu__list-link">
-						Event Calendar
-					</a>
-				</li>
-				<li class="nav-menu__list-item">
-					<a href="#" class="nav-menu__list-link">
-						Live Trainings & Website
-					</a>
-				</li>
-			</ul>
+
+				<?php endwhile; ?>
+			<?php endif; ?>
+
 			<div class="ready-start">
 				<h2 class="ready-start__title">
-					Ready to Start?
+				<?php the_field( 'header_title_ready', 'option' ); ?>
 				</h2>
-				<p class="ready-start__text">Call Now 855-378-1451 and learn more today!</p>
-				<button type="button" class="btn btn--md btn--shadow">
-					<span>Start Now</span>
-				</button>
+				<p class="ready-start__text"><?php the_field( 'header_subtitle_ready', 'option' ); ?></p>
+				<?php if ( have_rows( 'header_btn_ready', 'option' ) ) : ?>
+					<?php while ( have_rows( 'header_btn_ready', 'option' ) ) : the_row(); ?>
+					<a href="<?= the_sub_field( 'link' ) ?>" type="button" class="btn btn--md btn--shadow">
+						<span><?= the_sub_field( 'title' ) ?></span>
+					</a>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
