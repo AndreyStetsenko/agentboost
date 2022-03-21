@@ -89,7 +89,8 @@ $(document).ready(function () {
         $(`[data-id]`).attr('fill', '#323232');
         $this.attr('fill', '#ED4843');
         $(`[data-id=${getId}]`).attr('fill', 'white');
-        $('.map-option-popup').addClass('active');
+        $(`.map-option-popup`).addClass('active');
+        // $(`.map-option-popup[city-id=${getId}]`).addClass('active');
     })
     $('.close-map-poup').click(function () {
         $(this).closest('.map-option-popup').removeClass('active')

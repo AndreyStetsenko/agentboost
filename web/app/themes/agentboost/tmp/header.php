@@ -6,7 +6,7 @@
 			</a>			
 			<div class="header__actions">
 				<a href="#" class="btn btn--sm header-btn"><img src="<?php echo get_template_directory_uri() . "/assets/img/ico-search.svg"  ?>" alt=""></a>
-				<a href="#" class="btn btn--sm header-btn sm-hiddem"><img src="<?php echo get_template_directory_uri() . "/assets/img/house-icon.svg"  ?>" alt=""></a>
+				<a href="/" class="btn btn--sm header-btn sm-hiddem"><img src="<?php echo get_template_directory_uri() . "/assets/img/house-icon.svg"  ?>" alt=""></a>
 				<a href="#" class="btn btn--sm header-btn sm-hiddem"><span>Get Contacted</span></a>
 				<a href="#" class="btn btn--sm header-btn login sm-hiddem"><span>Login</span></a>
 				<a href="#" class="btn btn--md mw-100 btn--primary sing-up sm-hiddem">Sign Up</a>

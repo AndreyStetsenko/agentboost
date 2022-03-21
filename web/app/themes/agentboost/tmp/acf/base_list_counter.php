@@ -11,6 +11,16 @@
 
               <div class="col-lg-6 col-12 <?= $i == 6 ? 'text-md-right' : '' ?>">
                 <?= the_sub_field( 'content' ) ?>
+
+                <?php if ( have_rows( 'button' ) ) : ?>
+                  <?php while ( have_rows( 'button' ) ) : the_row(); ?>
+                    <?php if ( get_sub_field( 'title' ) != '' ) : ?>
+                    <a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--md btn--primary mt-40">
+                      <?= the_sub_field( 'title' ) ?>
+                    </a>
+                    <?php endif; ?>
+                  <?php endwhile; ?>
+                <?php endif; ?>
               </div>
               <div class="col-lg-6 col-12">
                   <div class="heading-column end-el">
@@ -29,6 +39,16 @@
               </div>
               <div class="col-lg-6 col-12">
                 <?= the_sub_field( 'content' ) ?>
+
+                <?php if ( have_rows( 'button' ) ) : ?>
+                  <?php while ( have_rows( 'button' ) ) : the_row(); ?>
+                    <?php if ( get_sub_field( 'title' ) != '' ) : ?>
+                    <a href="<?= the_sub_field( 'link' ) ?>" class="btn btn--md btn--primary mt-40">
+                      <?= the_sub_field( 'title' ) ?>
+                    </a>
+                    <?php endif; ?>
+                  <?php endwhile; ?>
+                <?php endif; ?>
               </div>
 
             <?php endif; ?>
