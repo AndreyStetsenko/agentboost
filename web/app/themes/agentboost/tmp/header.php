@@ -87,20 +87,20 @@
 
 				<?php endwhile; ?>
 			<?php endif; ?>
-
-			<div class="ready-start">
-				<h2 class="ready-start__title">
-				<?php the_field( 'header_title_ready', 'option' ); ?>
-				</h2>
-				<p class="ready-start__text"><?php the_field( 'header_subtitle_ready', 'option' ); ?></p>
-				<?php if ( have_rows( 'header_btn_ready', 'option' ) ) : ?>
-					<?php while ( have_rows( 'header_btn_ready', 'option' ) ) : the_row(); ?>
-					<a href="<?= the_sub_field( 'link' ) ?>" type="button" class="btn btn--md btn--shadow">
-						<span><?= the_sub_field( 'title' ) ?></span>
-					</a>
-					<?php endwhile; ?>
-				<?php endif; ?>
-			</div>
+			</ul>
+				<div class="ready-start">
+					<h2 class="ready-start__title">
+					<?php the_field( 'header_title_ready', 'option' ); ?>
+					</h2>
+					<p class="ready-start__text"><?php the_field( 'header_subtitle_ready', 'option' ); ?></p>
+					<?php if ( have_rows( 'header_btn_ready', 'option' ) ) : ?>
+						<?php while ( have_rows( 'header_btn_ready', 'option' ) ) : the_row(); ?>
+						<a href="<?= the_sub_field( 'link' ) ?>" type="button" class="btn btn--md btn--shadow">
+							<span><?= the_sub_field( 'title' ) ?></span>
+						</a>
+						<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
 		</div>
 	</div>
 	
@@ -110,6 +110,6 @@
 		width: 757px;		
 	">
 				
-		<img style="opacity: .4" src="<?php echo get_template_directory_uri() . "/assets/img/shape.svg" ?>" alt="">	
+		<img style="opacity: 0.1" src="<?php echo get_template_directory_uri() . "/assets/img/shape.svg" ?>" alt="">	
 	</div>
 </nav>
