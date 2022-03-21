@@ -16,13 +16,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-00" checked>
+                    <input type="radio" class="form-toggle__field" name="st3-radio-00" checked>
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-00">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-00">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -31,7 +31,7 @@
                   <div class="col-md-12 column">
                     <div class="form-group">
                       <label for="example-input-03" class="form-label required">If Yes, Explain</label>
-                      <textarea id="example-input-03" class="form-control" placeholder="Type your explanation here..."></textarea>
+                      <textarea id="example-input-03" class="form-control" placeholder="Type your explanation here..." name="st3-explain"></textarea>
                     </div>
                   </div>
                 </div>
@@ -54,13 +54,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-01" checked>
+                    <input type="radio" class="form-toggle__field" name="st3-radio-01" checked>
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-01">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-01">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -84,13 +84,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-02">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-02">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-02">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-02">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -114,13 +114,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-03">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-03">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-03">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-03">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -144,13 +144,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-04">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-04">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-04">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-04">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -174,13 +174,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-05">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-05">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-05">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-05">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -204,13 +204,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-06">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-06">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-06">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-06">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -234,13 +234,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-07">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-07">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-07">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-07">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -264,13 +264,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-08">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-08">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-08">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-08">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -294,13 +294,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-09">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-09">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-09">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-09">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -324,13 +324,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-10">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-10">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-10">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-10">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -354,13 +354,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-11">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-11">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-11">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-11">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -384,13 +384,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-12">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-12">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-12">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-12">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -414,13 +414,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-13">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-13">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-13">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-13">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -444,13 +444,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-14">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-14">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-14">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-14">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -474,13 +474,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-15">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-15">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-15">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-15">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -504,13 +504,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-16">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-16">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-16">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-16">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -534,13 +534,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-17">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-17">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-17">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-17">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>
@@ -564,13 +564,13 @@
                 <div class="row dbl-columns">
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-18">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-18">
                     <span class="form-toggle__label">Yes</span>
                     </label>
                   </div>
                   <div class="col-md-6 column">
                     <label class="form-toggle">
-                    <input type="radio" class="form-toggle__field" name="example-radio-18">
+                    <input type="radio" class="form-toggle__field" name="st3-radio-18">
                     <span class="form-toggle__label">No</span>
                     </label>
                   </div>

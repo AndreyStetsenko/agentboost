@@ -309,7 +309,7 @@
                   <div class="col-md-6 column">
                     <div class="form-group">
                       <label class="form-label required">Contract type</label>
-                      <select class="form-control">
+                      <select class="form-control" name="st1-contract-type">
                         <option>Select contract type</option>
                         <option>Select contract type</option>
                         <option>Select contract type</option>
@@ -319,7 +319,7 @@
                   <div class="col-md-6 column">
                     <div class="form-group">
                       <label class="form-label required">User type</label>
-                      <select class="form-control">
+                      <select class="form-control" name="st1-label-type">
                         <option>Select user type</option>
                         <option>Select user type</option>
                         <option>Select user type</option>

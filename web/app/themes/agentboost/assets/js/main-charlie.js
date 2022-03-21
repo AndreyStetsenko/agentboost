@@ -26,6 +26,7 @@ if(dropdownBtn) {
 
 
 const formBtnSteps = document.getElementById('formBtnSteps');
+const formBtnSubmit = document.getElementById('formBtnSubmit');
 
 const formStep1 = document.getElementById('formStep1');
 const formStep2 = document.getElementById('formStep2');
@@ -97,16 +98,13 @@ function nextStep(stepNum) {
         formStep3.style.display = 'none';
         formStep4.style.display = 'block';
         formBtnSteps.setAttribute('data-step', 4);
-        formBtnSteps.innerHTML = '<span>Submit</span>';
+        formBtnSteps.style.display = 'none';
+        formBtnSubmit.style.display = 'block';
         instractionStep4.classList.add('active');
     }
 }
 
 function prevStep(stepNum) {
-    if ( stepNum == 1 ) {
-        
-    }
-
     if ( stepNum == 2 ) {
         formStep1.style.display = 'block';
         formStep2.style.display = 'none';
@@ -128,7 +126,8 @@ function prevStep(stepNum) {
         formStep3.style.display = 'block';
         formStep4.style.display = 'none';
         formBtnSteps.setAttribute('data-step', 3);
-        formBtnSteps.innerHTML = '<span>Next</span>';
+        formBtnSteps.style.display = 'block';
+        formBtnSubmit.style.display = 'none';
         instractionStep4.classList.remove('active');
     }
 }

@@ -37,7 +37,8 @@ function agentboost_scripts() {
 		'main-alpha',
 		'main-bravo',
 		'main-charlie',
-		'main-delta'
+		'main-delta',
+		'main-form'
 	];
 
 	foreach ($arrFilesStylesInner as $key => $value) {

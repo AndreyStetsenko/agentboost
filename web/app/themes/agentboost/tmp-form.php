@@ -143,6 +143,9 @@ get_header();
             <button type="button" class="btn btn--md btn--primary" id="formBtnSteps" data-step="1">
               <span>Next</span>
             </button>
+            <button type="button" class="btn btn--md btn--primary" id="formBtnSubmit" style="display: none">
+              <span>Submit</span>
+            </button>
           </div>
         </div>
       </div>

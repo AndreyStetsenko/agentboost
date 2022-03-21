@@ -53,13 +53,13 @@
         </div>
         <div class="col-lg-4 pr-10 pl-10 pb-3">
           <label class="form-toggle">
-          <input type="checkbox" class="form-toggle__field" checked>
+          <input type="checkbox" class="form-toggle__field" name="st4-have-aml-yes" checked>
           <span class="form-toggle__label">Yes</span>
           </label>
         </div>
         <div class="col-lg-4 pr-10 pl-10 pb-3">
           <label class="form-toggle">
-          <input type="checkbox" class="form-toggle__field">
+          <input type="checkbox" class="form-toggle__field" name="st4-have-aml-no">
           <span class="form-toggle__label">No</span>
           </label>
         </div>
@@ -71,9 +71,9 @@
           <p class="bold-text">Long Term Care Partnership certification: please attach certificate or CE update</p>
         </div>
         <div class="col-lg-8 pr-10 pl-10 pb-3">
-          <form method="POST" action="#" class="dropzone">
+          <div class="dropzone">
             <label class="dropzone-label">
-            <input type="file" name="file">
+            <input type="file" name="st4-file-1">
             <button type="button" class="btn btn--md btn--primary">
             <span>Upload or Drag your file here</span>
             </button>
@@ -81,7 +81,7 @@
             Accepted file types: jpg, png, doc, pdf, docx, csvxlsx, Max. file size: 128 MB.
             </span>
             </label>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -95,193 +95,193 @@
         <div class="row pr-10 pl-10">
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field" checked>
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-1" checked>
             <span class="form-toggle__label">Aetna Medicare Advantage</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-2">
             <span class="form-toggle__label">Aetna Senior Products (Med Supp)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-3">
             <span class="form-toggle__label">Anthem</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-4">
             <span class="form-toggle__label">ARLIC/CHLIC (Cigna) Med Supp</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-5">
             <span class="form-toggle__label">Regence & Asuris (ID, OR, UT, WA)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-6">
             <span class="form-toggle__label">Florida Blue BCBS</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-7">
             <span class="form-toggle__label">North Carolina BCBS</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-8">
             <span class="form-toggle__label">Cigna (MAPD</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-9">
             <span class="form-toggle__label">Humana</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-10">
             <span class="form-toggle__label">HMA - Health Matching Account</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-11">
             <span class="form-toggle__label">Molina</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-12">
             <span class="form-toggle__label">Mutual of Omaha Med Supp</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-13">
             <span class="form-toggle__label">Select Health</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-14">
             <span class="form-toggle__label">UHC</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-15">
             <span class="form-toggle__label">WellCare Medicare Advantage/PDP</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-16">
             <span class="form-toggle__label">American General Life (AIG) Life, Annuity, FE</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-17">
             <span class="form-toggle__label">Athene (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-18">
             <span class="form-toggle__label">F&G (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-19">
             <span class="form-toggle__label">Guarantee Trust Life (GTL) Life</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-20">
             <span class="form-toggle__label">Mutual of Omaha (Life, Annuity, FE, LTC)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-21">
             <span class="form-toggle__label">North American (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-22">
             <span class="form-toggle__label">Protective (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-23">
             <span class="form-toggle__label">Transpremier (Life & FE)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-24">
             <span class="form-toggle__label">Washington National (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-25">
             <span class="form-toggle__label">Allianz (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-26">
             <span class="form-toggle__label">American Equity (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-27">
             <span class="form-toggle__label">Americo (Life, Annuity, FE)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-28">
             <span class="form-toggle__label">Banner Life (Life & Annuity) Life Only</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-29">
             <span class="form-toggle__label">Cigna Final Expense</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-30">
             <span class="form-toggle__label">EquiTrust (Life & Annuity)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-31">
             <span class="form-toggle__label">Great Western (FE)</span>
             </label>
           </div>
           <div class="col-lg-4 pr-10 pl-10 pb-3">
             <label class="form-toggle">
-            <input type="checkbox" class="form-toggle__field">
+            <input type="checkbox" class="form-toggle__field" name="st4-cariers-like-32">
             <span class="form-toggle__label">Loyal American (Cigna) FE</span>
             </label>
           </div>
@@ -299,9 +299,9 @@
           </div>
         </div>
         <div class="col-lg-8 pb-3 d-flex flex-column">
-          <form method="POST" action="#" class="dropzone d-flex f-auto">
+          <div class="dropzone d-flex f-auto">
             <label class="dropzone-label">
-            <input type="file" name="file">
+            <input type="file" name="st4-file-2">
             <button type="button" class="btn btn--md btn--primary">
             <span>Upload or Drag your file here</span>
             </button>
@@ -309,7 +309,7 @@
             Accepted file types: jpg, png, doc, pdf, docx, csvxlsx, Max. file size: 128 MB.
             </span>
             </label>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -322,9 +322,9 @@
           </div>
         </div>
         <div class="col-lg-8 pb-3 d-flex flex-column">
-          <form method="POST" action="#" class="dropzone d-flex f-auto">
+          <div class="dropzone d-flex f-auto">
             <label class="dropzone-label">
-            <input type="file" name="file">
+            <input type="file" name="st4-file-3">
             <button type="button" class="btn btn--md btn--primary">
             <span>Upload or Drag your file here</span>
             </button>
@@ -332,7 +332,7 @@
             Accepted file types: jpg, png, doc, pdf, docx, csvxlsx, Max. file size: 50 MB.
             </span>
             </label>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -351,13 +351,13 @@
               <div class="row pr-10 pl-10">
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="checkbox" class="form-toggle__field" checked>
+                  <input type="checkbox" class="form-toggle__field" name="st4-comission-adv" checked>
                   <span class="form-toggle__label">Yes</span>
                   </label>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="checkbox" class="form-toggle__field">
+                  <input type="checkbox" class="form-toggle__field" name="st4-comission-adv">
                   <span class="form-toggle__label">No</span>
                   </label>
                 </div>
@@ -369,31 +369,31 @@
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="example-input-02" class="form-label required">Account Owner Name</label>
-                    <input id="example-input-02" type="text" class="form-control" placeholder="Type account owner name...">
+                    <input id="example-input-02" type="text" class="form-control" name="st4-account-owner-name" placeholder="Type account owner name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="example-input-02" class="form-label required">Routing Number</label>
-                    <input id="example-input-02" type="text" class="form-control" placeholder="Type routing number...">
+                    <input id="example-input-02" type="text" class="form-control" name="st4-routing-number" placeholder="Type routing number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="example-input-02" class="form-label required">Account Number</label>
-                    <input id="example-input-02" type="text" class="form-control" placeholder="Type account number...">
+                    <input id="example-input-02" type="text" class="form-control" name="st4-account-number" placeholder="Type account number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="example-input-02" class="form-label required">Branch Name</label>
-                    <input id="example-input-02" type="text" class="form-control" placeholder="Type branch name...">
+                    <input id="example-input-02" type="text" class="form-control" name="st4-branch-name" placeholder="Type branch name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10">
                   <div class="form-group">
                     <label for="example-input-02" class="form-label required">Branch Address</label>
-                    <input id="example-input-02" type="text" class="form-control" placeholder="Type branch address...">
+                    <input id="example-input-02" type="text" class="form-control" name="st4-branch-address" placeholder="Type branch address...">
                   </div>
                 </div>
               </div>
@@ -403,13 +403,13 @@
               <div class="row pr-10 pl-10">
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="radio" class="form-toggle__field" name="example-radio-01" checked>
+                  <input type="radio" class="form-toggle__field" name="st4-radio-01" checked>
                   <span class="form-toggle__label">Checking</span>
                   </label>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="radio" class="form-toggle__field" name="example-radio-01">
+                  <input type="radio" class="form-toggle__field" name="st4-radio-01">
                   <span class="form-toggle__label">Savings</span>
                   </label>
                 </div>
@@ -425,9 +425,9 @@
           <p class="bold-text">Long Term Care Partnership certification: please attach certificate or CE update</p>
         </div>
         <div class="col-lg-8 pr-10 pl-10 pb-3">
-          <form method="POST" action="#" class="dropzone">
+          <div class="dropzone">
             <label class="dropzone-label">
-            <input type="file" name="file">
+            <input type="file" name="st4-file-4">
             <button type="button" class="btn btn--md btn--primary">
             <span>Upload or Drag your file here</span>
             </button>
@@ -435,7 +435,7 @@
             Accepted file types: jpg, png, doc, pdf, docx, csvxlsx, Max. file size: 128 MB.
             </span>
             </label>
-          </form>
+          </div>
         </div>
       </div>
     </div>
