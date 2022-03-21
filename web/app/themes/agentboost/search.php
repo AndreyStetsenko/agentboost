@@ -10,44 +10,70 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div class="wrapper wrapper--pt">
+		<?php require get_template_directory() . '/tmp/header.php'; ?>
 
-		<?php if ( have_posts() ) : ?>
+		<main class="main">
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'agentboost' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+			<?php if ( have_posts() ) : ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+				<section class="offer left-vector" style="background-image: url(http://agentboost.test/app/uploads/2022/03/unsplash_T8cMZD95YxA.jpg);">
+					<div class="container offer__container">
+						<div class="offer__body max-w-100">
+											<h2 class="title-section --white">Search Results for</h2>
+											<h1 class="title-section --white mb-15"><?= get_search_query() ?></h1>
+												</div>
+					</div>
+				</section>
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+				<div class="container mt-15 mb-15">
+					<div class="row">
+						<?php
+						/* Start the Loop */
+						while ( have_posts() ) :
+							the_post();
 
-			endwhile;
+							/**
+							 * Run the loop for the search to output the results.
+							 * If you want to overload this in a child theme then include a file
+							 * called content-search.php and that will be used instead.
+							 */
+							get_template_part( 'template-parts/content', 'search' );
 
-			the_posts_navigation();
+						endwhile; ?>
+					</div>
+				</div>
 
-		else :
+				<?php
+				the_posts_navigation();
 
-			get_template_part( 'template-parts/content', 'none' );
+				else :
 
-		endif;
-		?>
+				get_template_part( 'template-parts/content', 'none' );
 
-	</main><!-- #main -->
+				endif;
+				?>
+
+		</main>
+		<?php require get_template_directory() . '/tmp/footer.php'; ?>
+	</div>
+
+	<style>
+		.posts-navigation {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+
+		.nav-previous a,
+		.nav-next a {
+			background: #ed4842;
+			padding: 12px 25px;
+			border-radius: 25px;
+			color: #fff;
+			margin: 0 15px;
+		}
+	</style>
 
 <?php
-get_sidebar();
 get_footer();

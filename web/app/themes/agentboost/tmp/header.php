@@ -5,7 +5,7 @@
 				<img src="<?php echo get_template_directory_uri() . "/assets/img/logo-dark.png" ?>" alt="logo">
 			</a>			
 			<div class="header__actions">
-				<a href="#" class="btn btn--sm header-btn"><img src="<?php echo get_template_directory_uri() . "/assets/img/ico-search.svg"  ?>" alt=""></a>
+				<a href="/search" class="btn btn--sm header-btn"><img src="<?php echo get_template_directory_uri() . "/assets/img/ico-search.svg"  ?>" alt=""></a>
 				<a href="/" class="btn btn--sm header-btn sm-hiddem"><img src="<?php echo get_template_directory_uri() . "/assets/img/house-icon.svg"  ?>" alt=""></a>
 				<?php if ( have_rows( 'header_link_contacted', 'option' ) ) : ?>
 					<?php while ( have_rows( 'header_link_contacted', 'option' ) ) : the_row(); ?>

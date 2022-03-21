@@ -10,31 +10,27 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div class="wrapper wrapper--pt">
+		<?php require get_template_directory() . '/tmp/header.php'; ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<main class="main">
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			<div class="container">
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'agentboost' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'agentboost' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+			<?php
+			while ( have_posts() ) :
+				the_post();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				get_template_part( 'template-parts/content', get_post_type() );
 
-		endwhile; // End of the loop.
-		?>
+			endwhile; // End of the loop.
+			?>
 
-	</main><!-- #main -->
+			</div>
+
+		</main>
+		<?php require get_template_directory() . '/tmp/footer.php'; ?>
+	</div>
 
 <?php
-get_sidebar();
 get_footer();

@@ -7,29 +7,35 @@
  * @package Agentboost
  */
 
+$post_id = get_the_ID();
+$thumbnail = get_the_post_thumbnail( $post_id, 'thumbnail', array('class' => 'blog-card__image') ); 
+$def_thumbnail = get_bloginfo('template_directory') . '/assets/img/default-img.jpeg';
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+<div class="col-md-4" id="post-<?php the_ID(); ?>">
+	<div class="blog-card blog-card--wide-md mb-40">
+		<figure class="blog-card__image-wrap">
+			<a href="<?= get_permalink() ?>">
+				<?= $thumbnail ? $thumbnail : '<img src="' . $def_thumbnail . '" class="blog-card__image">' ?>
+			</a>
+		</figure>
+		<div class="blog-card__body">
 			<?php
-			agentboost_posted_on();
-			agentboost_posted_by();
+				$categories = get_the_category( $post_id );
+				if( $categories ) {
+					echo '<span class="blog-card__label">' . $categories[0]->name . '</span>';
+				}
 			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+			<h2 class="blog-card__title"><?php the_title(); ?></h2>
+			<ul class="blog-card__list">
+				<li class="blog-card__item">
+					<span class="blog-card__icon">
+						<img style="opacity: 0.4" src="<?= get_template_directory_uri() . "/assets/img/ico-calendar-sm.svg" ?>">
+					</span><?= the_time('M d, Y') ?>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-	<?php agentboost_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php agentboost_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

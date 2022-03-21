@@ -15,9 +15,14 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<div class="wrapper wrapper--pt">
+	<?php require get_template_directory() . '/tmp/header.php'; ?>
 
-		<?php
+  <main class="main">
+
+    <div class="container">
+
+    <?php
 		while ( have_posts() ) :
 			the_post();
 
@@ -31,7 +36,10 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-	</main><!-- #main -->
+    </div>
+
+	</main>
+</div>
 
 <?php
 get_sidebar();
