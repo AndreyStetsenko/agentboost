@@ -58,22 +58,5 @@ get_header();
 		<?php require get_template_directory() . '/tmp/footer.php'; ?>
 	</div>
 
-	<style>
-		.posts-navigation {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
-		}
-
-		.nav-previous a,
-		.nav-next a {
-			background: #ed4842;
-			padding: 12px 25px;
-			border-radius: 25px;
-			color: #fff;
-			margin: 0 15px;
-		}
-	</style>
-
 <?php
 get_footer();

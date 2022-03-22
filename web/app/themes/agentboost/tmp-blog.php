@@ -152,19 +152,7 @@ function getPosts($numPosts, $class) {
                   ?>
 								</ul>
 							</div>
-							<div class="sidebar__block mb-40 subscribe">
-								<div class="subscribe__head">
-									<h3 class="subscribe__title">Subscribe via Email</h3>
-									<p>Subscribe to our newsletter to be in touch with us and our product.</p>
-								</div>
-								<form action="#">
-									<div class="form-group mb-20">
-										<label class="form-label">Your email address</label>
-										<input type="email" class="form-control" placeholder="Type your email address...">
-									</div>
-									<button type="submit" class="btn btn--md btn--secondary w-100"><span>Subscribe</span></button>
-								</form>
-							</div>
+              <?= the_field( 'blog-form' ) ?>
 						</div>
 					</div>
 				</div>

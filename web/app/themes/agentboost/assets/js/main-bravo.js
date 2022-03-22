@@ -49,10 +49,10 @@ $(document).ready(function () {
 
 
 
-    $('.has-sub .nav-menu__list-link').click(function (e) {
-        e.preventDefault();
+    $('.nav-menu__list-item.has-sub').mouseover(function () {
+        // e.preventDefault();
         $('.nav-menu__list-item.has-sub').removeClass('active')
-        $(this).closest('.nav-menu__list-item').addClass('active');
+        $(this).addClass('active');
     })
     if ($(window).width() <= '1400') {
         $('.nav-menu__link').click(function () {
