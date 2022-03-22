@@ -5,10 +5,11 @@
 
 get_header();
 
-function getPosts($numPosts, $class) {
+function getPosts($numPosts, $offsetPosts, $class) {
   $args     = array(
     'post_type'      => 'post',
     'posts_per_page' => $numPosts,
+    'offset'         => $offsetPosts
   );
 
   $wp_query = new WP_Query( $args );
@@ -45,7 +46,7 @@ function getPosts($numPosts, $class) {
                 <span class="blog-card__icon">
                   <img style="opacity: 0.4" src="<?= get_template_directory_uri() . "/assets/img/ico-clock-sm.svg" ?>">
                 </span>
-                15 Min Read
+                <?= estimated_reading_time() ?>
               </li>
             </ul>
           </div>
@@ -70,8 +71,8 @@ function getPosts($numPosts, $class) {
 					<div class="row">
 
           <?php 
-          getPosts(1, 'col-12 d-flex');
-          getPosts(4, 'col-md-6 d-flex');
+          getPosts(1, 0, 'col-12 d-flex');
+          getPosts(4, 1, 'col-md-6 d-flex');
           ?>
 
 					</div>
@@ -157,11 +158,15 @@ function getPosts($numPosts, $class) {
 					</div>
 				</div>
 			</div>
+      <div class="row">
+
+      </div>
 			<div class="row">
         <?php
-        getPosts(1, 'col-md-6 col-xl-8 d-flex');
-        getPosts(2, 'col-md-6 col-xl-4 d-flex');
-        getPosts(1, 'col-md-6 col-xl-8 d-flex');
+        getPosts(3, 5, 'col-md-6 col-xl-4 d-flex');
+        getPosts(1, 8, 'col-md-6 col-xl-8 d-flex');
+        getPosts(2, 9, 'col-md-6 col-xl-4 d-flex');
+        getPosts(1, 11, 'col-md-6 col-xl-8 d-flex');
         ?>
 			</div>
 		</div>

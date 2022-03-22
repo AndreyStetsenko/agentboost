@@ -65,10 +65,10 @@
               <?php endwhile; ?>
             </div>
             <?php endif; ?>
-            <?php if ( have_rows( 'body' ) ) : ?>
+            <?php if ( have_rows( 'body' ) ) : $item = 0; ?>
             <div class="table-body">
-              <?php while ( have_rows( 'body' ) ) : the_row(); ?>
-              <div class="table-body-item">
+              <?php while ( have_rows( 'body' ) ) : the_row(); $item ++; ?>
+              <div class="table-body-item <?= $item >= 9 ? 'hidden-column' : '' ?>">
                 <?php if ( have_rows( 'row' ) ) : $i = 0; ?>
                   <?php while ( have_rows( 'row' ) ) : the_row(); $i++; ?>
                     <?php if ( $i == 1 ) : ?>
@@ -95,13 +95,13 @@
             </div>
             <?php endif; ?>
           </div>
-          <div class="table-footer">
-            <a href="#" class="btn color-primary more-show-btn">
-              <span class="ico"><img src="<?= get_bloginfo('template_directory') . "/assets/img/show-arrow.png"; ?>"></span>
-              <span class="show">Show More</span>
-              <span class="less">Show Less</span>
-            </a>
-          </div>
+        </div>
+        <div class="table-footer">
+          <a href="#" class="btn color-primary more-show-btn">
+            <span class="ico"><img src="<?= get_bloginfo('template_directory') . "/assets/img/show-arrow.png"; ?>"></span>
+            <span class="show">Show More</span>
+            <span class="less">Show Less</span>
+          </a>
         </div>
       </div>
         <?php endwhile; ?>

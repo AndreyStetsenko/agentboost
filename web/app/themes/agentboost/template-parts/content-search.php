@@ -34,6 +34,12 @@ $def_thumbnail = get_bloginfo('template_directory') . '/assets/img/default-img.j
 						<img style="opacity: 0.4" src="<?= get_template_directory_uri() . "/assets/img/ico-calendar-sm.svg" ?>">
 					</span><?= the_time('M d, Y') ?>
 				</li>
+				<li class="blog-card__item">
+					<span class="blog-card__icon">
+						<img style="opacity: 0.4" src="<?= get_template_directory_uri() . "/assets/img/ico-clock-sm.svg" ?>">
+					</span>
+					<?= estimated_reading_time() ?>
+				</li>
 			</ul>
 		</div>
 	</div>

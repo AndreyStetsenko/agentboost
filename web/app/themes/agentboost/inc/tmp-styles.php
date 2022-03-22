@@ -34,6 +34,7 @@ function agentboost_scripts() {
 	$arrFilesScripts = [
 		'air-datepicker',
 		'fullcalendar.min',
+		'canvas-to-blob',
 		'main-alpha',
 		'main-bravo',
 		'main-charlie',
