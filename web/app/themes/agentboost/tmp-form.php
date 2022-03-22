@@ -2,7 +2,7 @@
 /**
  * Template Name: Template Form
  */
-
+acf_form_head();
 get_header();
 ?>
 
@@ -113,7 +113,8 @@ get_header();
       </div>
     </section>
     
-    <form id="bigForm">
+    <form method="post">
+      <?= wp_nonce_field('handle_custom_form', 'nonce_custom_form'); ?>
       <?php require get_template_directory() . '/tmp/form-step-1.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-2.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-3.php'; ?>
