@@ -1,3 +1,6 @@
+<input type="hidden" id="google-api-key" value="<?= the_field( 'google_api_calendar', 'option' ) ?>">
+<input type="hidden" id="google-calendar-event" value="<?= the_field( 'google_calendar_events', 'option' ) ?>">
+
 <section class="page-section">
   <div class="container">
     <div class="card card-shadow">

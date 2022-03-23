@@ -373,9 +373,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function initCalendar() {
         var calendarEl = document.getElementById('report-shedule');
+        var googleCalendarApiKey = document.getElementById('google-api-key').value;
+        var googleEvent = document.getElementById('google-calendar-event').value;
 
         if (calendarEl) {
             var calendar = new FullCalendar.Calendar(calendarEl, {
+                googleCalendarApiKey: googleCalendarApiKey,
+                events: googleEvent,
                 initialView: 'dayGridMonth',
                 headerToolbar: {
                     left: 'title,prev,next',
