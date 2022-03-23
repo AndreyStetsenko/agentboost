@@ -141,65 +141,54 @@ function estimated_reading_time() {
 
 // add_action('init', 'wp_big_form');
 
-function javascript_variables(){ ?>
+function javascript_variables() { ?>
 	<script type="text/javascript">
 			var ajax_url = '<?php echo admin_url( "admin-ajax.php" ); ?>';
 			var ajax_nonce = '<?php echo wp_create_nonce( "secure_nonce_name" ); ?>';
-	</script><?php
+	</script>
+	<input type="hidden" name="ajax_url" value="<?= admin_url( "admin-ajax.php" ) ?>">
+	<input type="hidden" name="ajax_nonce" value="<?= wp_create_nonce( "secure_nonce_name" ) ?>">
+	<?php
 }
 add_action ( 'wp_head', 'javascript_variables' );
 
-// Here we register our "send_form" function to handle our AJAX request, do you remember the "superhypermega" hidden field? Yes, this is what it refers, the "send_form" action.
-add_action('wp_ajax_send_form', 'send_form'); // This is for authenticated users
-add_action('wp_ajax_nopriv_send_form', 'send_form'); // This is for unauthenticated users.
- 
-/**
- * In this function we will handle the form inputs and send our email.
- *
- * @return void
- */
- 
-function send_form(){
- 
-    // This is a secure process to validate if this request comes from a valid source.
-    check_ajax_referer( 'secure-nonce-name', 'security' );
- 
-    /**
-     * First we make some validations, 
-     * I think you are able to put better validations and sanitizations. =)
-     */
-     
-    if ( empty( $_POST["name"] ) ) {
-        echo "Insert your name please";
-        wp_die();
-    }
- 
-    if ( ! filter_var( $_POST["email"], FILTER_VALIDATE_EMAIL ) ) {
-        echo 'Insert your email please';
-        wp_die();
-    }
- 
-    if ( empty( $_POST["comment"] ) ) {
-        echo "Insert your comment please";
-        wp_die();
-    }
- 
-    // This is the email where you want to send the comments.
-    $to = 'andrey@stetsenko.org';
- 
-    // Your message subject.
-    $subject = 'Now message from a client!';
-    
-    $body  = 'From: ' . $_POST['name'] . '\n';
-    $body .= 'Email: ' . $_POST['name'] . '\n';
-    $body .= 'Message: ' . $_POST['comment'] . '\n';
- 
-    // This are the message headers.
-    // You can learn more about them here: https://developer.wordpress.org/reference/functions/wp_mail/
-    $headers = array('Content-Type: text/html; charset=UTF-8');
-     
-    wp_mail( $to, $subject, $body, $headers );
- 
-    echo 'Done!';
-    wp_die();
+function ajax_form(){
+	parse_str($_POST['data'], $data);
+	$response = '';
+	$thm  = 'Заказ звонка';
+	$thm  = "=?utf-8?b?". base64_encode($thm) ."?=";
+	
+	$mail_to = 'gremov04@gmail.com';
+	$headers = "Content-Type: text/html; charset=utf-8\n";
+	$headers .= 'From: Site' . "\r\n";
+
+	$msg = '
+	Contact Type: ' . $data['st1-contract-type'] . '
+	User Type: ' . $data['st1-label-type'] . '
+	First Name: ' . $data['st2-first-name'] . '
+	Last Name: ' . $data['st2-last-name'] . '
+	Social Security No: ' . $data['st2-social-security-no'] . '
+	Male: ' . $data['st2-male'] . '
+	Female: ' . $data['st2-female'] . '
+	Birth Date: ' . $data['st2-birth-date'] . '
+	Email: ' . $data['st2-email'] . '
+	Resident Insurance License # and Stat: ' . $data['st2-resident-license'] . '
+	';
+
+// Отправляем почтовое сообщение
+
+	if(wp_mail( $mail_to, $thm, $msg )){
+			$response = 'Сообщение отправлено';
+	}else
+			$response = 'Ошибка при отправке';
+
+// Сообщение о результате отправки почты
+
+	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ){
+			echo $response;
+			wp_die();
+	}
 }
+
+add_action('wp_ajax_nopriv_ajax_order', 'ajax_form' );
+add_action('wp_ajax_ajax_order', 'ajax_form' );

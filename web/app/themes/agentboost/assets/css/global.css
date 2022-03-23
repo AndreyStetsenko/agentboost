@@ -795,3 +795,24 @@ label.form-label {
 	color: #fff;
 	cursor: pointer;
 }
+
+.no-valid {
+	border-color: #ed4843;
+}
+
+.contact-message {
+	padding: 20px;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.contact-message.error {
+	background: #ed4842;
+}
+
+.contact-message.success {
+	background: #17af12;
+}
