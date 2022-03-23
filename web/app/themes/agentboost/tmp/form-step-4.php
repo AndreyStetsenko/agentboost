@@ -368,32 +368,32 @@
               <div class="row pr-10 pl-10">
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
-                    <label for="example-input-02" class="form-label required">Account Owner Name</label>
-                    <input id="example-input-02" type="text" class="form-control" name="st4-account-owner-name" placeholder="Type account owner name...">
+                    <label for="" class="form-label required">Account Owner Name</label>
+                    <input type="text" class="form-control" name="st4-account-owner-name" placeholder="Type account owner name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
-                    <label for="example-input-02" class="form-label required">Routing Number</label>
-                    <input id="example-input-02" type="text" class="form-control" name="st4-routing-number" placeholder="Type routing number...">
+                    <label for="" class="form-label required">Routing Number</label>
+                    <input type="text" class="form-control" name="st4-routing-number" placeholder="Type routing number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
-                    <label for="example-input-02" class="form-label required">Account Number</label>
-                    <input id="example-input-02" type="text" class="form-control" name="st4-account-number" placeholder="Type account number...">
+                    <label for="" class="form-label required">Account Number</label>
+                    <input type="text" class="form-control" name="st4-account-number" placeholder="Type account number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
-                    <label for="example-input-02" class="form-label required">Branch Name</label>
-                    <input id="example-input-02" type="text" class="form-control" name="st4-branch-name" placeholder="Type branch name...">
+                    <label for="" class="form-label required">Branch Name</label>
+                    <input type="text" class="form-control" name="st4-branch-name" placeholder="Type branch name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10">
                   <div class="form-group">
-                    <label for="example-input-02" class="form-label required">Branch Address</label>
-                    <input id="example-input-02" type="text" class="form-control" name="st4-branch-address" placeholder="Type branch address...">
+                    <label for="" class="form-label required">Branch Address</label>
+                    <input type="text" class="form-control" name="st4-branch-address" placeholder="Type branch address...">
                   </div>
                 </div>
               </div>

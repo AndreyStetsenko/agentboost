@@ -18,19 +18,19 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">First Name</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your first name" name="st2-first-name">
+                                            <input type="email" class="form-control" placeholder="Type your first name" name="st2-first-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Last Name</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your last name" name="st2-last-name">
+                                            <input type="email" class="form-control" placeholder="Type your last name" name="st2-last-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Social Security No.</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your social security no" name="st2-social-security-no">
+                                            <input type="email" class="form-control" placeholder="Type your social security no" name="st2-social-security-no">
                                         </div>
                                     </div>
                                 </div>
@@ -96,37 +96,37 @@
                                     <div class="col-md-6 column instraction-line">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Email Address</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your email adress..." name="st2-email">
+                                            <input type="email" class="form-control" placeholder="Type your email adress..." name="st2-email">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Resident Insurance License # and Stat</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your resident insurance license..." name="st2-resident-license">
+                                            <input type="email" class="form-control" placeholder="Type your resident insurance license..." name="st2-resident-license">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">NPN Number</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your NPN number..." name="st2-npn-num">
+                                            <input type="email" class="form-control" placeholder="Type your NPN number..." name="st2-npn-num">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column instraction-line">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Phone Number</label>
-                                            <input id="" type="email" class="form-control" placeholder="(***) ***-****" name="st2-phone">
+                                            <input type="email" class="form-control" placeholder="(***) ***-****" name="st2-phone">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column instraction-line">
                                         <div class="form-group">
-                                            <label for="example-input-01" class="form-label">FAX</label>
-                                            <input id="example-input-01" type="text" class="form-control" placeholder="(***) ***-****" name="st2-fax">
+                                            <label for="" class="form-label">FAX</label>
+                                            <input type="text" class="form-control" placeholder="(***) ***-****" name="st2-fax">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Driver's License Number</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your driver’s license number..." name="st2-drivers-license">
+                                            <input type="email" class="form-control" placeholder="Type your driver’s license number..." name="st2-drivers-license">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
@@ -163,25 +163,25 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Street Address</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your street address..." name="st2-street-address">
+                                            <input type="email" class="form-control" placeholder="Type your street address..." name="st2-street-address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Zip Code</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your zip code..." name="st2-zip-code">
+                                            <input type="email" class="form-control" placeholder="Type your zip code..." name="st2-zip-code">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">City</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your city..." name="st2-city">
+                                            <input type="email" class="form-control" placeholder="Type your city..." name="st2-city">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">State</label>
-                                            <input id="" type="email" class="form-control" placeholder="Select your state" name="st2-state">
+                                            <input type="email" class="form-control" placeholder="Select your state" name="st2-state">
                                         </div>
                                     </div>
                                 </div>
@@ -207,25 +207,25 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Street Address</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your street address..." name="st2-mailing-street-address">
+                                            <input type="email" class="form-control" placeholder="Type your street address..." name="st2-mailing-street-address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Zip Code</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your zip code..." name="st2-mailing-zip-code">
+                                            <input type="email" class="form-control" placeholder="Type your zip code..." name="st2-mailing-zip-code">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">City</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type your city..." name="st2-mailing-city">
+                                            <input type="email" class="form-control" placeholder="Type your city..." name="st2-mailing-city">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">State</label>
-                                            <input id="" type="email" class="form-control" placeholder="Select your state" name="st2-mailing-state">
+                                            <input type="email" class="form-control" placeholder="Select your state" name="st2-mailing-state">
                                         </div>
                                     </div>
                                 </div>
@@ -295,13 +295,13 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Beneficiary full name</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type beneficiary full name..." name="st2-benecifiar-name">
+                                            <input type="email" class="form-control" placeholder="Type beneficiary full name..." name="st2-benecifiar-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Beneficiary Phone number</label>
-                                            <input id="" type="email" class="form-control" placeholder="Type benefeciary phone number..." name="st2-benecifiar-phone">
+                                            <input type="email" class="form-control" placeholder="Type benefeciary phone number..." name="st2-benecifiar-phone">
                                         </div>
                                     </div>
                                 </div>

@@ -30,8 +30,8 @@
                 <div class="row dbl-columns">
                   <div class="col-md-12 column">
                     <div class="form-group">
-                      <label for="example-input-03" class="form-label required">If Yes, Explain</label>
-                      <textarea id="example-input-03" class="form-control" placeholder="Type your explanation here..." name="st3-explain"></textarea>
+                      <label for="" class="form-label required">If Yes, Explain</label>
+                      <textarea class="form-control" placeholder="Type your explanation here..." name="st3-explain"></textarea>
                     </div>
                   </div>
                 </div>

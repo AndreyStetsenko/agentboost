@@ -113,13 +113,14 @@ get_header();
       </div>
     </section>
     
-    <form method="post">
-      <?= wp_nonce_field('handle_custom_form', 'nonce_custom_form'); ?>
+    <form method="post" action="#" id="bigForm">
+      <?php 
+      // wp_nonce_field( 'send_big_form', 'nonce_big_form' ); 
+      ?>
       <?php require get_template_directory() . '/tmp/form-step-1.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-2.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-3.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-4.php'; ?>
-
       <section class="contracting-btns-wrapper-bg">
         <div class="container">
           <div class="contracting-btns-wrapper">
@@ -166,26 +167,28 @@ get_footer();
 ?>
 
 <script>
-  const form = $('#bigForm');
-
-  form.submit( function() {
-    var str = $(this).serialize();
-
-    $.ajax({
-      type: 'post',
-      url: '<?php bloginfo('template_url'); ?>/inc/mail.php',
-      data: str,
-      success: function(msg) {
-        if(msg == 'OK') {
-          result = '<div class="ok">Сообщение отправлено</div>'; // текст, если сообщение отправлено
-          $("#fields").show();
-        } else {
-          result = msg;
+  jQuery( 'form[name="contact-me"]' ).on( 'submit', function() {
+    var form_data = jQuery( this ).serializeArray();
+     
+    // Here we add our nonce (The one we created on our functions.php. WordPress needs this code to verify if the request comes from a valid source.
+    form_data.push( { "name" : "security", "value" : ajax_nonce } );
+ 
+    // Here is the ajax petition.
+    jQuery.ajax({
+        url : ajax_url, // Here goes our WordPress AJAX endpoint.
+        type : 'post',
+        data : form_data,
+        success : function( response ) {
+            // You can craft something here to handle the message return
+            alert( response );
+        },
+        fail : function( err ) {
+            // You can craft something here to handle an error if something goes wrong when doing the AJAX request.
+            alert( "There was an error: " + err );
         }
-        
-        console.log(result);
-      }
     });
+     
+    // This return prevents the submit event to refresh the page.
     return false;
-  });
+});
 </script>
