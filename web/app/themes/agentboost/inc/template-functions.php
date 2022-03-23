@@ -160,7 +160,7 @@ function ajax_form(){
 	
 	$mail_to = $data['send_mail_to'] ? $data['send_mail_to'] : 'gremov04@gmail.com';
 	$headers = "Content-Type: text/html; charset=utf-8\n";
-	$headers .= 'From: ' . $data['send_mail_from'] ? $data['send_mail_from'] : 'AgentBoost Form' . "\r\n";
+	$headers .= 'From: ' . $data['send_mail_from'] ? $data['send_mail_from'] : 'AgentBoost' . "\r\n";
 
 	$msg = '
 	** 1. Select contract & user type
