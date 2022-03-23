@@ -53,13 +53,13 @@
         </div>
         <div class="col-lg-4 pr-10 pl-10 pb-3">
           <label class="form-toggle">
-          <input type="checkbox" class="form-toggle__field" name="st4-have-aml-yes" checked>
+          <input type="radio" class="form-toggle__field" name="st4-have-aml" checked>
           <span class="form-toggle__label">Yes</span>
           </label>
         </div>
         <div class="col-lg-4 pr-10 pl-10 pb-3">
           <label class="form-toggle">
-          <input type="checkbox" class="form-toggle__field" name="st4-have-aml-no">
+          <input type="radio" class="form-toggle__field" name="st4-have-aml">
           <span class="form-toggle__label">No</span>
           </label>
         </div>
@@ -351,13 +351,13 @@
               <div class="row pr-10 pl-10">
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="checkbox" class="form-toggle__field" name="st4-comission-adv" checked>
+                  <input type="radio" data-required="true" class="form-toggle__field" name="st4-comission-adv" checked>
                   <span class="form-toggle__label">Yes</span>
                   </label>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="checkbox" class="form-toggle__field" name="st4-comission-adv">
+                  <input type="radio" class="form-toggle__field" name="st4-comission-adv">
                   <span class="form-toggle__label">No</span>
                   </label>
                 </div>
@@ -369,31 +369,31 @@
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="" class="form-label required">Account Owner Name</label>
-                    <input type="text" class="form-control" name="st4-account-owner-name" placeholder="Type account owner name...">
+                    <input type="text" data-required="true" class="form-control" name="st4-account-owner-name" placeholder="Type account owner name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="" class="form-label required">Routing Number</label>
-                    <input type="text" class="form-control" name="st4-routing-number" placeholder="Type routing number...">
+                    <input type="text" data-required="true" class="form-control" name="st4-routing-number" placeholder="Type routing number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="" class="form-label required">Account Number</label>
-                    <input type="text" class="form-control" name="st4-account-number" placeholder="Type account number...">
+                    <input type="text" data-required="true" class="form-control" name="st4-account-number" placeholder="Type account number...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <div class="form-group">
                     <label for="" class="form-label required">Branch Name</label>
-                    <input type="text" class="form-control" name="st4-branch-name" placeholder="Type branch name...">
+                    <input type="text" data-required="true" class="form-control" name="st4-branch-name" placeholder="Type branch name...">
                   </div>
                 </div>
                 <div class="col-md-6 pr-10 pl-10">
                   <div class="form-group">
                     <label for="" class="form-label required">Branch Address</label>
-                    <input type="text" class="form-control" name="st4-branch-address" placeholder="Type branch address...">
+                    <input type="text" data-required="true" class="form-control" name="st4-branch-address" placeholder="Type branch address...">
                   </div>
                 </div>
               </div>
@@ -403,13 +403,13 @@
               <div class="row pr-10 pl-10">
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="radio" class="form-toggle__field" name="st4-radio-01" checked>
+                  <input type="radio" data-required="true" value="Checking" class="form-toggle__field" name="st4-radio-01" checked>
                   <span class="form-toggle__label">Checking</span>
                   </label>
                 </div>
                 <div class="col-md-6 pr-10 pl-10 pb-3">
                   <label class="form-toggle">
-                  <input type="radio" class="form-toggle__field" name="st4-radio-01">
+                  <input type="radio" value="Savings" class="form-toggle__field" name="st4-radio-01">
                   <span class="form-toggle__label">Savings</span>
                   </label>
                 </div>

@@ -114,9 +114,9 @@ get_header();
     </section>
     
     <form id="bigForm">
-      <?php 
-      // wp_nonce_field( 'send_big_form', 'nonce_big_form' ); 
-      ?>
+      <input type="hidden" name="send_mail_theme" value="<?= the_field( 'send_form_theme', 'option' ) ?>">
+      <input type="hidden" name="send_mail_from" value="<?= the_field( 'send_form_from', 'option' ) ?>">
+      <input type="hidden" name="send_mail_to" value="<?= the_field( 'send_form_to_email', 'option' ) ?>">
       <?php require get_template_directory() . '/tmp/form-step-1.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-2.php'; ?>
       <?php require get_template_directory() . '/tmp/form-step-3.php'; ?>

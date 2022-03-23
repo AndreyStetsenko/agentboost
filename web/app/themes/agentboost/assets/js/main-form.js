@@ -40,7 +40,7 @@ function sendForm(e) {
 }
 
 function validateForm(form) {
-  $(form).find('input').each(function() {
+  $(form).find('[data-required="true"]').each(function() {
 
     if ($(this).val() == 0) {
       console.log('error');

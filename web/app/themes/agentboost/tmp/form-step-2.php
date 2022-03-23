@@ -18,19 +18,19 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">First Name</label>
-                                            <input type="text" class="form-control" placeholder="Type your first name" name="st2-first-name">
+                                            <input type="text" data-required="true" class="form-control" placeholder="Type your first name" name="st2-first-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Type your last name" name="st2-last-name">
+                                            <input type="text" data-required="true" class="form-control" placeholder="Type your last name" name="st2-last-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Social Security No.</label>
-                                            <input  type="text" class="form-control" placeholder="Type your social security no" name="st2-social-security-no">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your social security no" name="st2-social-security-no">
                                         </div>
                                     </div>
                                 </div>
@@ -59,13 +59,13 @@
                                             <div class="row dbl-columns">
                                                 <div class="col-md-6 column">
                                                     <label class="form-toggle">
-                                                        <input type="checkbox" class="form-toggle__field" checked="" name="st2-male">
+                                                        <input type="radio" data-required="true" value="Male" class="form-toggle__field" checked="" name="st2-gender">
                                                         <span class="form-toggle__label">Male</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-md-6 column">
                                                     <label class="form-toggle">
-                                                        <input type="checkbox" class="form-toggle__field" name="st2-female">
+                                                        <input type="radio" value="Female" class="form-toggle__field" name="st2-gender">
                                                         <span class="form-toggle__label">Female</span>
                                                     </label>
                                                 </div>
@@ -96,25 +96,25 @@
                                     <div class="col-md-6 column instraction-line">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Email Address</label>
-                                            <input type="email" class="form-control" placeholder="Type your email adress..." name="st2-email">
+                                            <input type="email" data-required="true" class="form-control" placeholder="Type your email adress..." name="st2-email">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Resident Insurance License # and Stat</label>
-                                            <input  type="text" class="form-control" placeholder="Type your resident insurance license..." name="st2-resident-license">
+                                            <input type="text" data-required="true" class="form-control" placeholder="Type your resident insurance license..." name="st2-resident-license">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">NPN Number</label>
-                                            <input  type="text" class="form-control" placeholder="Type your NPN number..." name="st2-npn-num">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your NPN number..." name="st2-npn-num">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column instraction-line">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Phone Number</label>
-                                            <input  type="text" class="form-control" placeholder="(***) ***-****" name="st2-phone">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="(***) ***-****" name="st2-phone">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column instraction-line">
@@ -126,7 +126,7 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Driver's License Number</label>
-                                            <input  type="text" class="form-control" placeholder="Type your driver’s license number..." name="st2-drivers-license">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your driver’s license number..." name="st2-drivers-license">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
@@ -134,9 +134,9 @@
                                             <label class="form-label">Driver's License State</label>
                                             <select class="form-control" name="st2-drivers-license-state">
                                                 <option selected="">Select driver’s license state</option>
-                                                <option value="1">option 1</option>
-                                                <option value="2">option 2</option>
-                                                <option value="3">option 3</option>
+                                                <option value="option 1">option 1</option>
+                                                <option value="option 2">option 2</option>
+                                                <option value="option 3">option 3</option>
                                             </select>
                                         </div>
                                     </div>
@@ -163,25 +163,25 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Street Address</label>
-                                            <input type="text" class="form-control" placeholder="Type your street address..." name="st2-street-address">
+                                            <input type="text" data-required="true" class="form-control" placeholder="Type your street address..." name="st2-street-address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Zip Code</label>
-                                            <input  type="text" class="form-control" placeholder="Type your zip code..." name="st2-zip-code">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your zip code..." name="st2-zip-code">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">City</label>
-                                            <input  type="text" class="form-control" placeholder="Type your city..." name="st2-city">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your city..." name="st2-city">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">State</label>
-                                            <input  type="text" class="form-control" placeholder="Select your state" name="st2-state">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Select your state" name="st2-state">
                                         </div>
                                     </div>
                                 </div>
@@ -207,25 +207,25 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Street Address</label>
-                                            <input  type="text" class="form-control" placeholder="Type your street address..." name="st2-mailing-street-address">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your street address..." name="st2-mailing-street-address">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Zip Code</label>
-                                            <input  type="text" class="form-control" placeholder="Type your zip code..." name="st2-mailing-zip-code">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your zip code..." name="st2-mailing-zip-code">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">City</label>
-                                            <input  type="text" class="form-control" placeholder="Type your city..." name="st2-mailing-city">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type your city..." name="st2-mailing-city">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">State</label>
-                                            <input  type="text" class="form-control" placeholder="Select your state" name="st2-mailing-state">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Select your state" name="st2-mailing-state">
                                         </div>
                                     </div>
                                 </div>
@@ -254,19 +254,19 @@
                                             <div class="row dbl-columns">
                                                 <div class="col-md-4 column">
                                                     <label class="form-toggle">
-                                                    <input type="radio" class="form-toggle__field" checked="" name="st2-business-as">
+                                                    <input type="radio" data-required="true" class="form-toggle__field" checked="" name="st2-business-as" value="Individual">
                                                     <span class="form-toggle__label">Individual</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-md-4 column">
                                                     <label class="form-toggle">
-                                                    <input type="radio" class="form-toggle__field" name="st2-business-as">
+                                                    <input type="radio" class="form-toggle__field" name="st2-business-as" value="Business Entity">
                                                     <span class="form-toggle__label">Business Entity</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-md-4 column">
                                                     <label class="form-toggle">
-                                                    <input type="radio" class="form-toggle__field" name="st2-business-as">
+                                                    <input type="radio" class="form-toggle__field" name="st2-business-as" value="Solicitor/LOA">
                                                     <span class="form-toggle__label">Solicitor/LOA</span>
                                                     </label>
                                                 </div>
@@ -279,13 +279,13 @@
                                             <div class="row dbl-columns">
                                                 <div class="col-md-6 column">
                                                     <label class="form-toggle">
-                                                        <input type="radio" class="form-toggle__field" checked="" name="st2-medicare-pros">
+                                                        <input type="radio" data-required="true" class="form-toggle__field" checked="" name="st2-medicare-pros" value="Yes">
                                                         <span class="form-toggle__label">Yes</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-md-6 column">
                                                     <label class="form-toggle">
-                                                        <input type="radio" class="form-toggle__field" name="st2-medicare-pros">
+                                                        <input type="radio" class="form-toggle__field" name="st2-medicare-pros" value="No">
                                                         <span class="form-toggle__label">No</span>
                                                     </label>
                                                 </div>
@@ -295,13 +295,13 @@
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Beneficiary full name</label>
-                                            <input  type="text" class="form-control" placeholder="Type beneficiary full name..." name="st2-benecifiar-name">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type beneficiary full name..." name="st2-benecifiar-name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 column">
                                         <div class="form-group">
                                             <label for="" class="form-label required">Beneficiary Phone number</label>
-                                            <input  type="text" class="form-control" placeholder="Type benefeciary phone number..." name="st2-benecifiar-phone">
+                                            <input  type="text" data-required="true" class="form-control" placeholder="Type benefeciary phone number..." name="st2-benecifiar-phone">
                                         </div>
                                     </div>
                                 </div>
