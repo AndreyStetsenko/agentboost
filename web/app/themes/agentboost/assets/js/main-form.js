@@ -55,20 +55,11 @@ function validateForm(form) {
 
     var name = $(this).attr('name');
 
-    // if ( !$('input[type="radio"][name="' + name + '"]').checked ) {
-    //   console.log('error');
-    //   $(this).next().addClass('no-valid');
-    // } else {
-    //   $(this).next().removeClass('no-valid');
-    // }
-    var elements = $('input[type="radio"][name="' + name + '"]')
-    for (var i=0, len=elements.length; i<len; ++i) {
-      if (elements[i].checked) {
-        $(this).next().removeClass('no-valid');
-      } else {
-        console.log('error');
-        $(this).next().addClass('no-valid');
-      }
+    if ( !$('input[name=' + name + ']:checked').val() ) {
+      console.log('error');
+      $(this).next().addClass('no-valid');
+    } else {
+      $(this).next().removeClass('no-valid');
     }
 
   });
