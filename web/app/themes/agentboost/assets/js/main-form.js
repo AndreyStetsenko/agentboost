@@ -42,11 +42,33 @@ function sendForm(e) {
 function validateForm(form) {
   $(form).find('[data-required="true"]').each(function() {
 
-    if ($(this).val() == 0) {
+    if ( $(this).val() == 0 ) {
       console.log('error');
       $(this).addClass('no-valid');
     } else {
       $(this).removeClass('no-valid');
+    }
+
+  });
+
+  $(form).find('[type="radio"]').each(function() {
+
+    var name = $(this).attr('name');
+
+    // if ( !$('input[type="radio"][name="' + name + '"]').checked ) {
+    //   console.log('error');
+    //   $(this).next().addClass('no-valid');
+    // } else {
+    //   $(this).next().removeClass('no-valid');
+    // }
+    var elements = $('input[type="radio"][name="' + name + '"]')
+    for (var i=0, len=elements.length; i<len; ++i) {
+      if (elements[i].checked) {
+        $(this).next().removeClass('no-valid');
+      } else {
+        console.log('error');
+        $(this).next().addClass('no-valid');
+      }
     }
 
   });
