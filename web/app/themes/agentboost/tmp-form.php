@@ -149,7 +149,6 @@ get_header();
               <button type="submit" class="btn btn--md btn--primary" id="formBtnSubmit" style="display: none">
                 <span>Submit</span>
               </button>
-              <button>Submit</button>
             </div>
           </div>
         </div>
